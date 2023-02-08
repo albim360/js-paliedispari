@@ -4,15 +4,17 @@ const userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
 const computerNumber = Math.floor(Math.random() * 5) + 1;
 const sum = userNumber + computerNumber;
 
-const isEven = (number) => number % 2 === 0;
+function isEven(number) {
+  return number % 2 === 0;
+}
 
 let result;
 if (isEven(sum) && userChoice === "pari") {
-    result = "Hai vinto!";
+  result = "Hai vinto!";
 } else if (!isEven(sum) && userChoice === "dispari") {
-    result = "Hai vinto!";
+  result = "Hai vinto!";
 } else {
-    result = "Hai perso.";
+  result = "Hai perso.";
 }
 
 alert(`Il tuo numero è: ${userNumber}
