@@ -8,11 +8,11 @@ const isEven = (number) => number % 2 === 0;
 
 let result;
 if (isEven(sum) && userChoice === "pari") {
-  result = "Hai vinto!";
+    result = "Hai vinto!";
 } else if (!isEven(sum) && userChoice === "dispari") {
-  result = "Hai vinto!";
+    result = "Hai vinto!";
 } else {
-  result = "Hai perso.";
+    result = "Hai perso.";
 }
 
 alert(`Il tuo numero è: ${userNumber}
